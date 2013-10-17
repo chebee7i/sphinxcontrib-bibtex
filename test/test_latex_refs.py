@@ -24,4 +24,4 @@ def test_latex_refs(app):
         code = stream.read()
         # broken: hyperref should match label
         assert re.search('\\hyperref\[contents:huygens\]', code)
-        assert re.search('\\label{contents:1}', code)
+        assert re.search('\\label{contents:huy57}', code)
